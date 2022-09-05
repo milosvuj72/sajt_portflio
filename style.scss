@@ -279,6 +279,9 @@ contact
                     color: $white;
                     cursor: pointer;
                     opacity: 1;
+                    @media(max-width:768px){
+                        width: 45%;
+                    }
                     &:hover{
                         background: transparent;
                         color: $gray;

@@ -239,6 +239,9 @@ contact
         color: #fff;
         cursor: pointer;
         opacity: 1; }
+        @media (max-width: 768px) {
+          #contact .contact .forma form input[type=submit] {
+            width: 45%; } }
         #contact .contact .forma form input[type=submit]:hover {
           background: transparent;
           color: #383838;
