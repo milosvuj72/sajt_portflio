@@ -168,7 +168,7 @@ about
         margin: 40px 40px 0 40px; }
         @media (max-width: 768px) {
           #about .about-page p .img-left {
-            width: 52%; } }
+            width: 100%; } }
         #about .about-page p .img-left:hover {
           animation: punKrug 0.7s linear; }
 @keyframes punKrug {
@@ -179,7 +179,7 @@ about
         width: 30%; }
         @media (max-width: 768px) {
           #about .about-page p .img-right {
-            width: 52%; } }
+            width: 100%; } }
         #about .about-page p .img-right:hover {
           animation: punKrug 0.7s linear; }
 @keyframes punKrug {
@@ -199,7 +199,8 @@ contact
     padding-top: 150px; }
     @media (max-width: 768px) {
       #contact .contact {
-        flex-direction: column; } }
+        flex-direction: column;
+        padding-top: 75px; } }
     #contact .contact .contact-text {
       font-size: 1.5rem;
       flex: 1; }
@@ -207,7 +208,8 @@ contact
         padding-bottom: 150px; }
         @media (max-width: 768px) {
           #contact .contact .contact-text .copy {
-            font-size: 1.3rem; } }
+            font-size: 1.3rem;
+            padding-bottom: 75px; } }
     #contact .contact .forma {
       flex: 1; }
       #contact .contact .forma form input {

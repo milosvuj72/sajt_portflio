@@ -210,7 +210,7 @@ about
             width: 30%;
             margin: 40px 40px 0 40px;
             @media(max-width:768px){
-                width: 52%;
+                width: 100%;
             }
             &:hover{
                 animation: punKrug 0.7s linear;
@@ -224,7 +224,7 @@ about
             float: right;
             width: 30%;
             @media(max-width:768px){
-                width: 52%;
+                width: 100%;
             }
             &:hover{
                 animation: punKrug 0.7s linear;
@@ -250,6 +250,7 @@ contact
         padding-top: 150px;
         @media(max-width:768px){
             flex-direction: column;
+            padding-top: 75px;
         }
         .contact-text{
             font-size: 1.5rem;
@@ -258,6 +259,7 @@ contact
                 padding-bottom: 150px;
                 @media(max-width:768px){
                     font-size: 1.3rem;
+                    padding-bottom: 75px;
                 }
             }
         }
