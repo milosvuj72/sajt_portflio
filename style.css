@@ -1,0 +1,189 @@
+/***********
+variables
+***********/
+/*rgb(236,208,72)*/
+/*rgb(12,153,104)*/
+/*rgb(105,184,213)*/
+/***********
+mixin
+***********/
+/***********
+basic styles
+***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #383838;
+  padding: 10px 0 30px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arizonia", sans-serif;
+  color: #383838; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 0.4s ease; }
+
+.sign-up {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0d9968;
+  color: #fff;
+  text-align: center;
+  padding: 20px; }
+  .sign-up a {
+    color: black; }
+
+.main-headings {
+  font-size: 5rem;
+  margin-bottom: 15px; }
+  @media (max-width: 768px) {
+    .main-headings {
+      font-size: 3rem; } }
+
+.underline {
+  background: #383838;
+  height: 8px;
+  width: 100px;
+  margin-bottom: 15px; }
+
+.icons {
+  display: flex;
+  list-style: none; }
+  .icons li {
+    margin-right: 30px;
+    position: relative;
+    bottom: 45px; }
+    .icons li a {
+      font-size: 2rem;
+      color: #383838; }
+      .icons li a:hover {
+        font-size: 3rem;
+        transition-duration: .7s; }
+    .icons li i:hover {
+      animation: punKrug 0.7s linear; }
+@keyframes punKrug {
+  100% {
+    transform: rotate(360deg); } }
+/***********
+nav
+***********/
+nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; } }
+  nav .logo {
+    font-family: "Arizonia", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    background: #383838;
+    padding: 10px 15px;
+    border-radius: 10px 35px;
+    text-align: center; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav ul .active {
+      background: #383838;
+      border-radius: 25px;
+      padding: 8px 16px;
+      color: #fff;
+      border: 4px solid #383838; }
+    nav ul li {
+      list-style: none;
+      margin-left: 50px; }
+      @media (max-width: 768px) {
+        nav ul li {
+          margin: 20px 5px 5px 5px; } }
+      nav ul li a {
+        font-size: 1rem;
+        color: #383838;
+        font-weight: 900;
+        text-transform: uppercase; }
+        nav ul li a:hover {
+          background: transparent; }
+
+/***********
+home
+***********/
+#home {
+  background: linear-gradient(rgba(236, 208, 72, 0.4), rgba(236, 208, 72, 0.4)), url(img/home-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  @media (max-width: 768px) {
+    #home {
+      background-position: right;
+      background-image: linear-gradient(rgba(236, 208, 72, 0.8), rgba(236, 208, 72, 0.8)), url(img/home-background.png); } }
+  #home .about-home {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 60%; }
+    @media (max-width: 768px) {
+      #home .about-home {
+        width: 100%;
+        font-size: 1.2rem; } }
+
+/***********
+about
+***********/
+#about {
+  background: #0d9968; }
+  #about .about-page {
+    padding-top: 100px;
+    padding-bottom: 50px; }
+    @media (max-width: 768px) {
+      #about .about-page h1 {
+        font-size: 3.5em; } }
+    #about .about-page p {
+      font-size: 1.4rem;
+      text-align: justify; }
+      @media (max-width: 768px) {
+        #about .about-page p {
+          font-size: 1.2rem; } }
+      #about .about-page p .img-left {
+        float: left;
+        width: 30%;
+        margin: 40px 40px 0 40px; }
+        @media (max-width: 768px) {
+          #about .about-page p .img-left {
+            width: 52%; } }
+        #about .about-page p .img-left:hover {
+          animation: punKrug 0.7s linear; }
+@keyframes punKrug {
+  100% {
+    transform: rotate(360deg); } }
+      #about .about-page p .img-right {
+        float: right;
+        width: 30%; }
+        @media (max-width: 768px) {
+          #about .about-page p .img-right {
+            width: 52%; } }
+        #about .about-page p .img-right:hover {
+          animation: punKrug 0.7s linear; }
+@keyframes punKrug {
+  100% {
+    transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=style.css.map */
