@@ -168,7 +168,8 @@ about
         margin: 40px 40px 0 40px; }
         @media (max-width: 768px) {
           #about .about-page p .img-left {
-            width: 100%; } }
+            width: 100%;
+            margin: 10px auto; } }
         #about .about-page p .img-left:hover {
           animation: punKrug 0.7s linear; }
 @keyframes punKrug {
